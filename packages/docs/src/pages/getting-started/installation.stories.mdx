@@ -1,0 +1,98 @@
+import { Meta, Source, Unstyled } from "@storybook/addon-docs";
+import { Button, Heading, Tabs, Text } from "@felix-ds/react";
+import { SubTitle } from "../../components/SubTitle";
+
+<Meta title="Getting started/Installation" />
+
+# Installation
+
+Learn how to install and use Felix UI in your app.
+
+## Install package
+
+To install Felix UI, run one of the following commands:
+
+<Source
+  language="bash"
+  dark
+  code={`
+# npm
+npm install @felix-ds/react
+`}
+/>
+
+<Source
+  language="bash"
+  dark
+  code={`
+# yarn
+yarn add @felix-ds/react
+`}
+/>
+
+<Source
+  language="bash"
+  dark
+  code={`
+# pnpm
+pnpm add @felix-ds/react
+`}
+/>
+
+## Import global style
+
+You need to add `global.css` style into your application. If you are using
+webpack and CSS, CSS Modules or Saas, import global.css file into your CSS
+file:
+
+<Source
+  language="css"
+  dark
+  code={`
+@import "@felix-ds/react/dist/global.css";
+// your CSS content here
+`}
+/>
+
+If you are using Vite or Next.js framework, just import CSS directly into
+your main JSX/TSX file:
+
+<Source language="tsx" dark code={`import "@felix-ds/react/dist/global.css"`} />
+
+For other frameworks, see the documentation about how to import CSS.
+
+<SubTitle>Use TailwindCSS</SubTitle>
+
+It's no required to use TailwindCSS in your application, but if you want
+to use it, you need to extend the default theme configuration of Felix UI into
+your Tailwind configuration file.
+
+To do this, change `tailwindcss.config.ts` with the follow content:
+
+<Source
+  language="ts"
+  dark
+  type="code"
+  code={`import { tailwindConfig } from '@felix-ds/react'
+\nexport default {
+  content: ['./src/**/*.tsx'],
+  theme: {
+    extend: tailwindConfig.theme,
+  },
+}
+`}
+/>
+
+To override all default configuration (recommended):
+
+<Source
+  language="ts"
+  dark
+  type="code"
+  code={`import { tailwindConfig } from '@felix-ds/react'
+\nexport default {
+  content: ['./src/**/*.tsx'],
+  theme: tailwindConfig.theme,
+}
+`}
+/>

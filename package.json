@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo run build --filter=package/docs && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "2.27.1",
+    "@storybook/addon-essentials": "7.6.3",
+    "@storybook/addon-interactions": "7.6.3",
+    "@storybook/addon-links": "7.6.3",
+    "@storybook/addon-onboarding": "1.0.9",
+    "@storybook/addon-themes": "7.6.3",
+    "@storybook/blocks": "7.6.3",
+    "@storybook/react": "7.6.3",
+    "@storybook/react-vite": "7.6.3",
+    "@storybook/storybook-deployer": "2.8.16",
+    "@storybook/test": "7.6.3",
+    "turbo": "1.11.0"
+  }
+}

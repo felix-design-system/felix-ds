@@ -1,0 +1,11 @@
+{
+  "name": "@felix-ds/eslint-config",
+  "main": "index.js",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {
+    "@jsfelix/eslint-config": "1.2.8",
+    "eslint": "8.55.0"
+  }
+}

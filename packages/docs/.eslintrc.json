@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "@felix-ds/eslint-config",
+    "plugin:storybook/recommended"
+  ]
+}

@@ -1,0 +1,42 @@
+import { Meta, Unstyled } from "@storybook/addon-docs";
+import { Heading, Text } from "@felix-ds/react";
+import { ColorsGrid } from "../../components/ColorsGrid";
+import { colors } from "@felix-ds/tokens";
+
+<Meta title="Tokens/Colors" />
+
+# Colors
+
+The Felix UI Color System.
+
+## White
+
+<ColorsGrid colors={{ 0: colors.white }} name="white" />
+
+## Black
+
+<ColorsGrid colors={{ 0: colors.black }} name="black" />
+
+## Primary Colors
+
+<ColorsGrid colors={colors.primary} name="primary" />
+
+## Secondary Colors
+
+<ColorsGrid colors={colors.secondary} name="secondary" />
+
+## Neutral Colors
+
+<ColorsGrid colors={colors.neutral} name="neutral" />
+
+## Danger Colors
+
+<ColorsGrid colors={colors.danger} name="danger" />
+
+## Warning Colors
+
+<ColorsGrid colors={colors.warning} name="warning" />
+
+## Success Colors
+
+<ColorsGrid colors={colors.success} name="success" />
