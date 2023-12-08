@@ -8,8 +8,10 @@ export default {
   component: Box,
   args: {
     children: [
-      <Heading size="sm">This is a Box Title</Heading>,
-      <Text>This is a text</Text>,
+      <Heading key={1} size="sm">
+        This is a Box Title
+      </Heading>,
+      <Text key={2}>This is a text</Text>,
     ],
   },
   argTypes: {
