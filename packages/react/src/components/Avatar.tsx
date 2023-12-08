@@ -1,8 +1,11 @@
-import { User } from 'phosphor-react'
+'use client'
+
 import { ComponentProps } from 'react'
 import { twMerge } from 'tailwind-merge'
 
 import * as PrimitiveAvatar from '@radix-ui/react-avatar'
+
+import { UserIcon } from '../icons/UserIcon'
 
 interface AvatarImageProps
   extends ComponentProps<typeof PrimitiveAvatar.Image> {
@@ -62,7 +65,7 @@ export function Avatar(props: AvatarImageProps) {
     <AvatarRoot size={props.size}>
       <AvatarImage {...props} />
       <AvatarFallback delayMs={600}>
-        <User size={iconSizes[props.size ?? 'md']} />
+        <UserIcon size={iconSizes[props.size ?? 'md']} />
       </AvatarFallback>
     </AvatarRoot>
   )

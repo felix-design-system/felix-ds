@@ -1,16 +1,16 @@
 {
   "name": "@felix-ds/react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
     "build:css": "tailwindcss -i src/global.css -o dist/global.css -c tailwind.config.ts --full",
-    "build:react": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "build:react": "tsup",
     "build": "run-s build:*",
     "dev:css": "tailwindcss -i src/global.css -o dist/global.css -c tailwind.config.ts --full --watch",
-    "dev:react": "tsup src/index.tsx --format esm,cjs --dts --external react --watch",
+    "dev:react": "tsup --watch",
     "dev": "run-p dev:*",
     "prelint": "tsc --noemit",
     "lint": "eslint src/**/*.ts* --max-warnings 0",
@@ -38,7 +38,6 @@
     "@radix-ui/react-avatar": "1.0.4",
     "@radix-ui/react-slot": "1.0.2",
     "@radix-ui/react-tabs": "1.0.4",
-    "phosphor-react": "1.4.1",
     "tailwind-merge": "2.1.0",
     "tailwind-variants": "0.1.18"
   }
