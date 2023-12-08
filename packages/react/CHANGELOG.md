@@ -1,5 +1,11 @@
 # @felix-ds/react
 
+## 1.0.2
+
+### Patch Changes
+
+- 44f94c9: Fix dependencies
+
 ## 1.0.1
 
 ### Patch Changes
