@@ -9,8 +9,9 @@ export default {
   title: 'Inputs/Button',
   component: Button,
   args: {
-    variant: 'primary',
     children: 'Click me',
+    variant: 'primary',
+    size: 'md',
     disabled: false,
     loading: false,
   },
@@ -20,6 +21,10 @@ export default {
       control: {
         type: 'inline-radio',
       },
+    },
+    size: {
+      options: ['sm', 'md', 'lg'],
+      control: { type: 'inline-radio' },
     },
   },
 } satisfies Meta<ButtonProps>

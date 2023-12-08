@@ -37,9 +37,9 @@ export function Button({
             hover:border-danger-700`,
         },
         size: {
-          sm: 'py-2 min-w-[100px] text-sm',
-          md: 'py-3 min-w-[120px] text-md',
-          lg: 'py-4 min-w-[150px] text-lg',
+          sm: 'py-2 px-3 min-w-[100px] text-sm',
+          md: 'py-3 px-4 min-w-[120px] text-md',
+          lg: 'py-4 px-5 min-w-[150px] text-lg',
         },
         disabled: {
           true: '',
