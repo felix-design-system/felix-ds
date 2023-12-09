@@ -53,3 +53,5 @@ export function Checkbox({ label, ...props }: CheckboxProps) {
     </div>
   )
 }
+
+Checkbox.displayName = 'Checkbox'
