@@ -45,11 +45,12 @@ export function TextArea({
           className="w-full text-right text-neutral-500 dark:text-neutral-500"
         >
           <span
-            className={
-              content.length < (minLength ?? 0)
-                ? 'text-danger-400 dark:text-danger-700'
-                : ''
-            }
+            className={`
+              ${
+                content.length < (minLength ?? 0) &&
+                'text-danger-400 dark:text-danger-700'
+              }
+            `}
           >
             {content.length}
           </span>

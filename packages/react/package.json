@@ -1,6 +1,6 @@
 {
   "name": "@felix-ds/react",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -36,6 +36,7 @@
   "dependencies": {
     "@felix-ds/tokens": "*",
     "@radix-ui/react-avatar": "1.0.4",
+    "@radix-ui/react-checkbox": "^1.0.4",
     "@radix-ui/react-slot": "1.0.2",
     "@radix-ui/react-tabs": "1.0.4",
     "tailwind-merge": "2.1.0",
