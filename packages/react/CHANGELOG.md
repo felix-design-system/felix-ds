@@ -1,5 +1,11 @@
 # @felix-ds/react
 
+## 1.1.2
+
+### Patch Changes
+
+- Add minLength and maxLength with counter on TextArea
+
 ## 1.1.1
 
 ### Patch Changes
