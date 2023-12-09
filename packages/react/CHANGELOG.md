@@ -29,5 +29,5 @@
 ### Patch Changes
 
 - e8c8773: Initial setup
-- - Fix button padding and adjust docs;
-  - Add server components compatibility.
+- Fix button padding and adjust docs;
+- Add server components compatibility.

@@ -50,3 +50,5 @@ export function TextInput({
     </div>
   )
 }
+
+TextInput.displayName = 'TextInput'
