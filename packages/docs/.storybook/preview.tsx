@@ -38,7 +38,7 @@ const preview: Preview = {
           ['Overview', 'Installation'],
           'Tokens',
           'Inputs',
-          ['Button', 'TextInput'],
+          ['Button', 'TextInput', 'TextArea'],
           'Typography',
           ['Text', 'Heading', 'List'],
           'Data Display',

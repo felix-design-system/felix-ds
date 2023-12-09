@@ -6,5 +6,6 @@ export { List } from './components/List'
 export { Tabs } from './components/Tabs'
 export { Text } from './components/Text'
 export { TextInput } from './components/TextInput'
+export { TextArea } from './components/TextArea'
 
 export * from './config/tailwind'
