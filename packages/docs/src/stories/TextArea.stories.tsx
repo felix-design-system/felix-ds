@@ -11,8 +11,10 @@ export default {
 export const Default: StoryObj<ComponentProps<typeof TextArea>> = {
   args: {
     placeholder: 'Type your bio',
-    fullWidth: false,
+    fullWidth: true,
     disabled: false,
+    minLength: 100,
+    maxLength: 500,
   },
 }
 
