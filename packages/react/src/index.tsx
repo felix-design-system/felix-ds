@@ -8,5 +8,6 @@ export { Tabs } from './components/Tabs'
 export { Text } from './components/Text'
 export { TextInput } from './components/TextInput'
 export { TextArea } from './components/TextArea'
+export { Tooltip } from './components/Tooltip'
 
 export * from './config/tailwind'

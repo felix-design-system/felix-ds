@@ -45,6 +45,8 @@ const preview: Preview = {
           ['Avatar'],
           'Surfaces',
           ['Box'],
+          'Overlay',
+          ['Tooltip'],
           'Navigation',
           ['Avatar'],
         ],

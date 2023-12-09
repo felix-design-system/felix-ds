@@ -1,5 +1,11 @@
 # @felix-ds/react
 
+## 1.3.0
+
+### Minor Changes
+
+- Added Tooltip
+
 ## 1.2.1
 
 ### Patch Changes
