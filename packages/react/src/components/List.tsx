@@ -4,7 +4,7 @@ import { twMerge } from 'tailwind-merge'
 import { Text } from './Text'
 
 type ListRootProps = {
-  className: string
+  className?: string
   children: ReactNode
 }
 
