@@ -10,6 +10,13 @@ export default {
     children: <Text>Some text with tooltip</Text>,
     value: 'Lorem ipsum',
   },
+  argTypes: {
+    children: {
+      table: {
+        disable: true,
+      },
+    },
+  },
 } satisfies Meta<ComponentProps<typeof Tooltip>>
 
 export const Default: StoryObj<ComponentProps<typeof Tooltip>> = {}

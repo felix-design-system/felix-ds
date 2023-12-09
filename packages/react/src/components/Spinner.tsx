@@ -1,16 +1,25 @@
 import { tv } from 'tailwind-variants'
 
 type SpinnerProps = {
-  variant?: 'primary' | 'destructive'
+  variant?: 'primary' | 'destructive' | 'neutral'
+  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
 }
 
-export function Spinner({ variant = 'primary' }: SpinnerProps) {
+export function Spinner({ variant = 'primary', size = 'md' }: SpinnerProps) {
   const spinnerVariants = tv({
-    base: 'w-6 h-6 animate-spin',
+    base: 'animate-spin',
     variants: {
       variant: {
         primary: 'text-primary-400 fill-primary-100',
         destructive: 'text-danger-400 fill-danger-100',
+        neutral: 'text-neutral-400 fill-neutral-100',
+      },
+      size: {
+        xs: 'w-3 h-3',
+        sm: 'w-4 h-4',
+        md: 'w-6 h-6',
+        lg: 'w-8 h-8',
+        xl: 'w-12 h-12',
       },
     },
     defaultVariants: {
@@ -22,7 +31,7 @@ export function Spinner({ variant = 'primary' }: SpinnerProps) {
     <div role="status">
       <svg
         aria-hidden="true"
-        className={spinnerVariants({ variant })}
+        className={spinnerVariants({ variant, size })}
         viewBox="0 0 100 101"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

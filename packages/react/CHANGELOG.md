@@ -1,5 +1,11 @@
 # @felix-ds/react
 
+## 1.3.1
+
+### Patch Changes
+
+- Added Spinner documentation and fix Spinner props
+
 ## 1.3.0
 
 ### Minor Changes
