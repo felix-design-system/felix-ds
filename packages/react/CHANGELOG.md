@@ -1,5 +1,11 @@
 # @felix-ds/react
 
+## 1.1.1
+
+### Patch Changes
+
+- Fix disabled TextArea
+
 ## 1.1.0
 
 ### Minor Changes
