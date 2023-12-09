@@ -10,11 +10,12 @@ import { UserIcon } from '../icons/UserIcon'
 interface AvatarImageProps
   extends ComponentProps<typeof PrimitiveAvatar.Image> {
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
+  className?: string
 }
 
 type AvatarFallbackProps = ComponentProps<typeof PrimitiveAvatar.Fallback>
 
-const AvatarRoot = ({ children, size = 'md' }: AvatarImageProps) => {
+const AvatarRoot = ({ children, size = 'md', className }: AvatarImageProps) => {
   const avatarSizes = {
     xs: 'w-8 h-8',
     sm: 'w-12 h-12',
@@ -28,6 +29,7 @@ const AvatarRoot = ({ children, size = 'md' }: AvatarImageProps) => {
       className={twMerge(
         'rounded-full inline-block overflow-hidden',
         avatarSizes[size],
+        className,
       )}
     >
       {children}
@@ -35,10 +37,10 @@ const AvatarRoot = ({ children, size = 'md' }: AvatarImageProps) => {
   )
 }
 
-const AvatarImage = ({ className, ...rest }: AvatarImageProps) => {
+const AvatarImage = ({ ...rest }: AvatarImageProps) => {
   return (
     <PrimitiveAvatar.Image
-      className={twMerge('w-full h-full object-cover rounded-full', className)}
+      className="w-full h-full object-cover rounded-full"
       {...rest}
     />
   )
@@ -52,7 +54,7 @@ const AvatarFallback = ({ children }: AvatarFallbackProps) => {
   )
 }
 
-export function Avatar(props: AvatarImageProps) {
+export function Avatar({ className, size, ...rest }: AvatarImageProps) {
   const iconSizes = {
     xs: 18,
     sm: 26,
@@ -62,10 +64,10 @@ export function Avatar(props: AvatarImageProps) {
   }
 
   return (
-    <AvatarRoot size={props.size}>
-      <AvatarImage {...props} />
+    <AvatarRoot className={className} size={size}>
+      <AvatarImage {...rest} />
       <AvatarFallback delayMs={600}>
-        <UserIcon size={iconSizes[props.size ?? 'md']} />
+        <UserIcon size={iconSizes[size ?? 'md']} />
       </AvatarFallback>
     </AvatarRoot>
   )
