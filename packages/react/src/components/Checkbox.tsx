@@ -1,6 +1,6 @@
 'use client'
 
-import { ComponentProps } from 'react'
+import { ComponentProps, ElementRef, forwardRef } from 'react'
 
 import * as PrimitiveCheckbox from '@radix-ui/react-checkbox'
 
@@ -11,10 +11,14 @@ interface CheckboxProps extends ComponentProps<typeof PrimitiveCheckbox.Root> {
   label?: string
 }
 
-export function Checkbox({ label, ...props }: CheckboxProps) {
+export const Checkbox = forwardRef<
+  ElementRef<typeof PrimitiveCheckbox.Root>,
+  CheckboxProps
+>(({ label, ...props }, ref) => {
   return (
     <div className="flex gap-2">
       <PrimitiveCheckbox.Root
+        ref={ref}
         className={`flex items-center justify-center box-border w-6 h-6
         rounded-md leading-none fill-white overflow-hidden border-2 border-neutral-200 dark:border-neutral-700
         dark:hover:border-primary-600 hover:border-primary-600
@@ -54,6 +58,6 @@ export function Checkbox({ label, ...props }: CheckboxProps) {
       </label>
     </div>
   )
-}
+})
 
 Checkbox.displayName = 'Checkbox'

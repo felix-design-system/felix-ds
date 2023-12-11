@@ -1,5 +1,11 @@
 # @felix-ds/react
 
+## 1.3.5
+
+### Patch Changes
+
+- Fix Checkbox forwardRef
+
 ## 1.3.4
 
 ### Patch Changes
