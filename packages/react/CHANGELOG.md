@@ -1,5 +1,11 @@
 # @felix-ds/react
 
+## 1.3.4
+
+### Patch Changes
+
+- Add some fixes to component props
+
 ## 1.3.3
 
 ### Patch Changes

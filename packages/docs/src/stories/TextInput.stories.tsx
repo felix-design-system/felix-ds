@@ -22,6 +22,7 @@ export const Default: StoryObj<ComponentProps<typeof TextInput>> = {
 export const WithPrefix: StoryObj<ComponentProps<typeof TextInput>> = {
   args: {
     prefix: 'instagram.com/',
+    placeholder: 'your-username',
   },
 }
 
