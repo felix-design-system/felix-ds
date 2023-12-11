@@ -1,5 +1,11 @@
 # @felix-ds/react
 
+## 1.3.3
+
+### Patch Changes
+
+- f44fb93: Fix use of react-hook-form
+
 ## 1.3.2
 
 ### Patch Changes
