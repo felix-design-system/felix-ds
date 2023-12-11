@@ -1,6 +1,6 @@
 'use client'
 
-import { ComponentProps, useState } from 'react'
+import React, { ComponentProps, ForwardedRef, useState } from 'react'
 
 import { Text } from './Text'
 
@@ -9,15 +9,18 @@ interface TextAreaProps extends ComponentProps<'textarea'> {
   fullWidth?: boolean
 }
 
-export function TextArea({
-  fullWidth,
-  disabled,
-  minLength,
-  maxLength,
-  value,
-  onChange,
-  ...rest
-}: TextAreaProps) {
+export function CustomTextArea(
+  {
+    fullWidth,
+    disabled,
+    minLength,
+    maxLength,
+    value,
+    onChange,
+    ...rest
+  }: TextAreaProps,
+  ref: ForwardedRef<HTMLTextAreaElement> | undefined,
+) {
   const [content, setContent] = useState('')
 
   return (
@@ -38,6 +41,7 @@ export function TextArea({
         ${disabled && 'opacity-40 cursor-not-allowed'} ${
           fullWidth ? 'w-full' : ''
         }`}
+        ref={ref}
         {...rest}
       />
       {!!maxLength && (
@@ -61,5 +65,7 @@ export function TextArea({
     </div>
   )
 }
+
+export const TextArea = React.forwardRef(CustomTextArea)
 
 TextArea.displayName = 'TextArea'
