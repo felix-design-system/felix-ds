@@ -35,6 +35,7 @@ export const TextInput = forwardRef<ElementRef<'input'>, TextInputProps>(
         ${props.disabled && 'opacity-40 cursor-not-allowed'}
         ${fullWidth && 'w-full'} ${icon ? 'pl-1.5 pr-4' : 'px-4'}`,
             className,
+            error ? 'border-danger-600 dark:border-danger-400' : '',
           )}
         >
           {!!icon && (

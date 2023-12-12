@@ -1,5 +1,11 @@
 # @felix-ds/react
 
+## 1.4.1
+
+### Patch Changes
+
+- fixed text input border on error
+
 ## 1.4.0
 
 ### Minor Changes
