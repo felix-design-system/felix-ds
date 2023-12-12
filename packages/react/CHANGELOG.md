@@ -1,5 +1,11 @@
 # @felix-ds/react
 
+## 1.4.3
+
+### Patch Changes
+
+- fixed Checkbox.Indicator children
+
 ## 1.4.2
 
 ### Patch Changes

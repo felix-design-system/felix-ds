@@ -30,7 +30,6 @@ export const Checkbox = forwardRef<
         {...props}
       >
         <PrimitiveCheckbox.Indicator
-          asChild
           className="text-white w-4 h-4"
           aria-labelledby={`${props.id}-label`}
         >
