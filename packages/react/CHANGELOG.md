@@ -1,5 +1,11 @@
 # @felix-ds/react
 
+## 1.4.0
+
+### Minor Changes
+
+- Added helper text with error option
+
 ## 1.3.5
 
 ### Patch Changes
