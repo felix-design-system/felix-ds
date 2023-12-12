@@ -12,32 +12,30 @@ Learn how to install and use Felix DS in your app.
 
 To install Felix DS, run one of the following commands:
 
-<Source
-  language="bash"
-  dark
-  code={`
-# npm
-npm install @felix-ds/react
-`}
-/>
-
-<Source
-  language="bash"
-  dark
-  code={`
-# yarn
-yarn add @felix-ds/react
-`}
-/>
-
-<Source
-  language="bash"
-  dark
-  code={`
-# pnpm
-pnpm add @felix-ds/react
-`}
-/>
+<Unstyled>
+<Tabs.Root defaultValue="npm" data-mode="dark" className="border border-neutral-700">
+  <Tabs.List>
+    <Tabs.Trigger value="npm">npm</Tabs.Trigger>
+    <Tabs.Trigger value="yarn">yarn</Tabs.Trigger>
+    <Tabs.Trigger value="pnpm">pnpm</Tabs.Trigger>
+  </Tabs.List>
+  <Tabs.Content value="npm">
+```bash
+npm install @felix-ds/react@latest
+```
+  </Tabs.Content>
+  <Tabs.Content value="yarn" asChild>
+```bash
+yarn add @felix-ds/react@latest
+```
+  </Tabs.Content>
+  <Tabs.Content value="pnpm" asChild>
+```bash
+pnpm add @felix-ds/react@latest
+```
+  </Tabs.Content>
+</Tabs.Root>
+</Unstyled>
 
 ## Import global style
 
@@ -50,7 +48,6 @@ file:
   dark
   code={`
 @import "@felix-ds/react/dist/global.css";
-// your CSS content here
 `}
 />
 

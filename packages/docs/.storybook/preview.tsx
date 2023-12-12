@@ -4,6 +4,7 @@ import { withThemeByDataAttribute } from '@storybook/addon-themes'
 import type { Preview } from '@storybook/react'
 import '@felix-ds/react/dist/global.css'
 import '../src/styles/global.css'
+import './preview.css'
 import { themes } from '@storybook/theming'
 
 export const decorators = [
