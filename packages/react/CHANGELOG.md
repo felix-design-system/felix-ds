@@ -1,5 +1,11 @@
 # @felix-ds/react
 
+## 1.4.2
+
+### Patch Changes
+
+- reduce helperText to xs
+
 ## 1.4.1
 
 ### Patch Changes

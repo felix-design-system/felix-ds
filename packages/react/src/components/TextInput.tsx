@@ -58,7 +58,7 @@ export const TextInput = forwardRef<ElementRef<'input'>, TextInputProps>(
           />
         </div>
         <Text
-          size="sm"
+          size="xs"
           className={
             error
               ? 'text-danger-600 dark:text-danger-400'
