@@ -51,7 +51,7 @@ export const WithErrorMessage: StoryObj<ComponentProps<typeof TextInput>> = {
   decorators: [
     Story => (
       <div>
-        <Text>Email</Text>
+        <Text className="mb-1">Email</Text>
         <Story />
       </div>
     ),
@@ -59,6 +59,7 @@ export const WithErrorMessage: StoryObj<ComponentProps<typeof TextInput>> = {
   args: {
     type: 'email',
     value: 'wrong.email.com',
+    icon: <UserIcon size={16} />,
     error: true,
     placeholder: 'Password',
     helperText: 'Type a valid email',

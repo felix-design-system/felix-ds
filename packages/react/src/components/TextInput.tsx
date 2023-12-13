@@ -25,7 +25,7 @@ export const TextInput = forwardRef<ElementRef<'input'>, TextInputProps>(
     ref,
   ) => {
     return (
-      <div>
+      <div className={fullWidth ? 'w-full' : ''}>
         <div
           className={twMerge(
             `flex relative items-baseline bg-neutral-100 dark:bg-neutral-800 rounded-md border-2
@@ -33,9 +33,11 @@ export const TextInput = forwardRef<ElementRef<'input'>, TextInputProps>(
         py-3 focus-within:border-primary-600 dark:focus-within:border-primary-600 dark:text-neutral-200
         fill-neutral-500 focus-within:fill-primary-600
         ${props.disabled && 'opacity-40 cursor-not-allowed'}
-        ${fullWidth && 'w-full'} ${icon ? 'pl-1.5 pr-4' : 'px-4'}`,
+         ${icon ? 'pl-1.5 pr-4' : 'px-4'}`,
             className,
-            error ? 'border-danger-600 dark:border-danger-400' : '',
+            error
+              ? 'border-danger-600 dark:border-danger-400 fill-danger-600 dark:fill-danger-400 focus-within:fill-primary-600 dark:focus-within:fill-primary-600'
+              : '',
           )}
         >
           {!!icon && (
@@ -59,11 +61,12 @@ export const TextInput = forwardRef<ElementRef<'input'>, TextInputProps>(
         </div>
         <Text
           size="xs"
-          className={
-            error
-              ? 'text-danger-600 dark:text-danger-400'
-              : 'text-neutral-600 dark:text-neutral-400'
-          }
+          className={`ml-1 leading-5
+            ${
+              error
+                ? 'text-danger-600 dark:text-danger-400'
+                : 'text-neutral-600 dark:text-neutral-400'
+            }`}
         >
           {helperText || <>&nbsp;</>}
         </Text>

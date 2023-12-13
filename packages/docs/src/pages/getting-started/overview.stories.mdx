@@ -1,32 +1,40 @@
 import { Meta, Source, Unstyled } from "@storybook/addon-docs";
 import { Button, Heading, List, Text } from "@felix-ds/react";
 import { SubTitle } from "../../components/SubTitle";
+import { Title } from "../../components/Title";
 
 <Meta title="Getting started/Overview" />
 
-# Felix DS - Overview
+<Unstyled>
 
-Felix DS is a React Design System that uses TailwindCSS to
-create beautiful components.
+<div className="dark" data-mode="dark">
 
-## Introduction
+<Title>Felix DS - Overview</Title>
 
-Felix DS is an open-source React Design System Library that uses
+<Text size="lg">Felix DS is a React Design System that uses TailwindCSS to
+create beautiful components.</Text>
+
+<SubTitle>Introduction</SubTitle>
+
+<Text>Felix DS is an open-source React Design System Library that uses
 TailwindCSS and Radix UI to create beautiful, reusable, accessible and
-server/client side components for your application.
+server/client side components for your application.</Text>
 
-Advantages of using Felix DS:
+<Text>Advantages of using Felix DS:</Text>
 
-- component standardization;
-- easy to use in your application;
-- because Felix DS uses TailwindCSS for styles, there is no runtime
+<List.Root>
+  <List.Item>component standardization;</List.Item>
+  <List.Item>easy to use in your application;</List.Item>
+  <List.Item>because Felix DS uses TailwindCSS for styles, there is no runtime
   CSS, and the library is compatible with React v18 and server side
-  components;
-- you may extend TailwindCSS and the default theme configuration in
+  components;</List.Item>
+  <List.Item>you may extend TailwindCSS and the default theme configuration in
   your app, if you want to use Tailwind; in other hands, you don't need to
-  install and use TailwindCSS.
+  install and use TailwindCSS.</List.Item>
+</List.Root>
 
-An example of `Button` component:
+
+<Text>An example of `Button` component:</Text>
 
 <Source
   language="tsx"
@@ -45,10 +53,10 @@ export function App() {
 }`}
 />
 
-&nbsp;
+<div className="mt-4 p-4 border border-neutral-700 rounded-md">
+  <Button onClick={() => console.log("sent!")}>Send report</Button>
+</div>
 
-<Unstyled>
-  <div className="p-4 border border-neutral-700 rounded-md">
-    <Button onClick={() => console.log("sent!")}>Send report</Button>
-  </div>
+</div>
+
 </Unstyled>

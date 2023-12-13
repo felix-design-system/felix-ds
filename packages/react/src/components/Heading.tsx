@@ -28,7 +28,7 @@ export function Heading({
   return (
     <Comp
       className={twMerge(
-        'font-semibold dark:text-neutral-100',
+        'font-semibold dark:text-neutral-300',
         sizes[size],
         className,
       )}

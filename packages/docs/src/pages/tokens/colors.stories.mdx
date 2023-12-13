@@ -2,41 +2,51 @@ import { Meta, Unstyled } from "@storybook/addon-docs";
 import { Heading, Text } from "@felix-ds/react";
 import { ColorsGrid } from "../../components/ColorsGrid";
 import { colors } from "@felix-ds/tokens";
+import { SubTitle } from "../../components/SubTitle";
+import { Title } from "../../components/Title";
 
 <Meta title="Tokens/Colors" />
 
-# Colors
+<Unstyled>
 
-The Felix DS Color System.
+<div className="dark" data-mode="dark">
 
-## White
+<Title>Colors</Title>
+
+<Text size="lg">The Felix DS Color System.</Text>
+
+<SubTitle>White</SubTitle>
 
 <ColorsGrid colors={{ 0: colors.white }} name="white" />
 
-## Black
+<SubTitle>Black</SubTitle>
 
 <ColorsGrid colors={{ 0: colors.black }} name="black" />
 
-## Primary Colors
+<SubTitle>Primary Colors</SubTitle>
 
 <ColorsGrid colors={colors.primary} name="primary" />
 
-## Secondary Colors
+<SubTitle>Secondary Colors</SubTitle>
 
 <ColorsGrid colors={colors.secondary} name="secondary" />
 
-## Neutral Colors
+<SubTitle>Neutral Colors</SubTitle>
 
 <ColorsGrid colors={colors.neutral} name="neutral" />
 
-## Danger Colors
+<SubTitle>Danger Colors</SubTitle>
 
 <ColorsGrid colors={colors.danger} name="danger" />
 
-## Warning Colors
+<SubTitle>Warning Colors</SubTitle>
 
 <ColorsGrid colors={colors.warning} name="warning" />
 
-## Success Colors
+<SubTitle>Success Colors</SubTitle>
 
 <ColorsGrid colors={colors.success} name="success" />
+
+</div>
+
+</Unstyled>

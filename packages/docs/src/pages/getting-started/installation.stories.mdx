@@ -1,16 +1,21 @@
 import { Meta, Source, Unstyled } from "@storybook/addon-docs";
 import { Button, Heading, Tabs, Text } from "@felix-ds/react";
 import { SubTitle } from "../../components/SubTitle";
+import { Title } from "../../components/Title";
 
 <Meta title="Getting started/Installation" />
 
-# Installation
+<Unstyled>
 
-Learn how to install and use Felix DS in your app.
+<div className="dark" data-mode="dark">
 
-## Install package
+<Title>Installation</Title>
 
-To install Felix DS, run one of the following commands:
+<Text size="lg">Learn how to install and use Felix DS in your app.</Text>
+
+<SubTitle>Install package</SubTitle>
+
+<Text>To install Felix DS, run one of the following commands:</Text>
 
 <Tabs.Root defaultValue="npm" data-mode="dark" className="border border-neutral-700">
   <Tabs.List>
@@ -35,11 +40,11 @@ pnpm add @felix-ds/react@latest
   </Tabs.Content>
 </Tabs.Root>
 
-## Import global style
+<SubTitle>Import global style</SubTitle>
 
-You need to add `global.css` style into your application. If you are using
+<Text>You need to add `global.css` style into your application. If you are using
 webpack and CSS, CSS Modules or Saas, import global.css file into your CSS
-file:
+file:</Text>
 
 <Source
   language="css"
@@ -49,20 +54,20 @@ file:
 `}
 />
 
-If you are using Vite or Next.js framework, just import CSS directly into
-your main JSX/TSX file:
+<Text>If you are using Vite or Next.js framework, just import CSS directly into
+your main JSX/TSX file:</Text>
 
 <Source language="tsx" dark code={`import "@felix-ds/react/dist/global.css"`} />
 
-For other frameworks, see the documentation about how to import CSS.
+<Text>For other frameworks, see the documentation about how to import CSS.</Text>
 
 <SubTitle>Use TailwindCSS</SubTitle>
 
-It's no required to use TailwindCSS in your application, but if you want
+<Text>It's no required to use TailwindCSS in your application, but if you want
 to use it, you need to extend the default theme configuration of Felix DS into
-your Tailwind configuration file.
+your Tailwind configuration file.</Text>
 
-To do this, change `tailwindcss.config.ts` with the follow content:
+<Text>To do this, change `tailwindcss.config.ts` with the follow content:</Text>
 
 <Source
   language="ts"
@@ -78,7 +83,7 @@ To do this, change `tailwindcss.config.ts` with the follow content:
 `}
 />
 
-To override all default configuration (recommended):
+<Text>To override all default configuration (recommended):</Text>
 
 <Source
   language="ts"
@@ -91,3 +96,7 @@ To override all default configuration (recommended):
 }
 `}
 />
+
+</div>
+
+</Unstyled>
