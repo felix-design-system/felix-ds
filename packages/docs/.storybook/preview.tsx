@@ -49,7 +49,7 @@ const preview: Preview = {
           'Overlay',
           ['Tooltip'],
           'Surfaces',
-          ['Box'],
+          ['Box', 'Container'],
           'Navigation',
           ['Avatar'],
         ],

@@ -1,5 +1,11 @@
 # @felix-ds/react
 
+## 1.5.0
+
+### Minor Changes
+
+- Added Container
+
 ## 1.4.4
 
 ### Patch Changes
