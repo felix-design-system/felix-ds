@@ -9,7 +9,7 @@ export interface ContainerProps {
 }
 
 const containerVariants = tv({
-  base: 'block mx-auto box-border',
+  base: 'block mx-auto box-border p-4',
   variants: {
     maxWidth: {
       xs: 'max-w-[480px] w-full',

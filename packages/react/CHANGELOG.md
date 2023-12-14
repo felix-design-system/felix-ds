@@ -1,5 +1,11 @@
 # @felix-ds/react
 
+## 1.5.1
+
+### Patch Changes
+
+- fix padding on Container
+
 ## 1.5.0
 
 ### Minor Changes
