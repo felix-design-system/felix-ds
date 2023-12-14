@@ -12,6 +12,7 @@ voluptatibus deleniti blanditiis aspernatur. Accusamus consequuntur
 consectetur magnam nihil minima, nostrum suscipit tempora. Aperiam,
 accusantium quos. Libero voluptate odio quia nulla!`,
     size: 'md',
+    center: false,
   },
   argTypes: {
     children: {
