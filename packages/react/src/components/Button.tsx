@@ -22,14 +22,14 @@ export function Button({
   const buttonVariants = (className?: string) =>
     tv({
       base: twMerge(
-        `rounded-md font-medium text-center box-border flex
+        `rounded-md font-medium text-center box-border flex border-2
         items-center justify-center gap-2 [&>svg]:w-4 [&>svg]:h-4 transition-colors`,
         className,
       ),
       variants: {
         variant: {
-          primary: `bg-primary-600 text-white hover:bg-primary-700`,
-          secondary: `text-primary-600 border-2 hover:bg-primary-50 dark:hover:bg-primary-950
+          primary: `bg-primary-600 border-primary-600 text-white hover:bg-primary-700 hover:border-primary-700`,
+          secondary: `text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-950
             bg-opacity-75 dark:hover:bg-opacity-50`,
           ghost: `text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-950
             bg-opacity-75 dark:hover:bg-opacity-50 border-transparent`,
@@ -45,17 +45,15 @@ export function Button({
           true: '',
           false: '',
         },
-        loading: {
-          true: '',
-          false: '',
-        },
       },
       compoundVariants: [
         {
           variant: 'primary',
           disabled: true,
           class: `bg-neutral-300 dark:bg-neutral-700 dark:text-neutral-400
-            hover:bg-neutral-300 dark:hover:db-neutral-700`,
+            hover:bg-neutral-300 dark:hover:db-neutral-700
+            border-neutral-300 dark:border-neutral-700 hover:border-neutral-300
+            dark:hover:border-neutral-700`,
         },
         {
           variant: 'secondary',

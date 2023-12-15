@@ -1,5 +1,11 @@
 # @felix-ds/react
 
+## 1.5.3
+
+### Patch Changes
+
+- Fixed button size and bordering
+
 ## 1.5.2
 
 ### Patch Changes
